@@ -1,4 +1,4 @@
-echo "Starting"
+echo "Starting..."
 sleep 1s
 
 echo "Post 50"
@@ -16,5 +16,9 @@ echo "Put 50 DONE"
 echo "Put 250"
 source ./req_put_250.sh
 echo "Put 250 DONE"
+
+echo "Deleting..."
+source ./delete_dep.sh
+echo "Delete DONE"
 
 echo "END"
