@@ -2,7 +2,7 @@
 
 echo "REQUEST,MOMENT,TIMESTAMP" >> "../results/req_put_150.csv"
 
-for i in {401..1601}
+for i in {0..450}
 	do
 
   		echo "PUT,BEGIN,"$(date +%s%N) >> "../results/req_put_150.csv"
