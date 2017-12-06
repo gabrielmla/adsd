@@ -32,7 +32,8 @@ for i in {1..11}
 		echo "Delete DONE"
 
 		echo "Saving results..."
-		mkdir -p "../results/E$i/"
+		sleep 1s
+		mkdir "../results/E$i/"
 		mv "../results/req_post_50.csv" "../results/E$i/"
 		mv "../results/db_post_50.csv" "../results/E$i/"
 		mv "../results/req_post_150.csv" "../results/E$i/"

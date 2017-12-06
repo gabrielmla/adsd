@@ -1,0 +1,12 @@
+echo "Saving results..."
+sleep 1s
+mkdir "../results/E1/"
+mv "../results/req_post_50.csv" "../results/E1/"
+mv "../results/db_post_50.csv" "../results/E1/"
+mv "../results/req_post_150.csv" "../results/E1/"
+mv "../results/db_post_150.csv" "../results/E1/"
+mv "../results/req_put_50.csv" "../results/E1/"
+mv "../results/db_put_50.csv" "../results/E1/"
+mv "../results/req_put_150.csv" "../results/E1/"
+mv "../results/db_put_150.csv" "../results/E1/"
+echo "Saving DONE"
