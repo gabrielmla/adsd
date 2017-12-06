@@ -5,7 +5,8 @@ echo "1GB exec"
 sleep 1s
 for i in {1..11}
 	do
-		echo "LOOP $I"		
+		echo "LOOP $i"
+		filename="$i"		
 		
 		echo "Reseting counters..."
 		curl -X POST localhost:3000/depositApi/resetCounter
@@ -33,15 +34,16 @@ for i in {1..11}
 
 		echo "Saving results..."
 		sleep 1s
-		mkdir "../results/E$i/"
-		mv "../results/req_post_50.csv" "../results/E$i/"
-		mv "../results/db_post_50.csv" "../results/E$i/"
-		mv "../results/req_post_150.csv" "../results/E$i/"
-		mv "../results/db_post_150.csv" "../results/E$i/"
-		mv "../results/req_put_50.csv" "../results/E$i/"
-		mv "../results/db_put_50.csv" "../results/E$i/"
-		mv "../results/req_put_150.csv" "../results/E$i/"
-		mv "../results/db_put_150.csv" "../results/E$i/"
+        
+		mkdir "../results/$filename/"
+		mv "../results/req_post_50.csv" "../results/$filename/"
+		mv "../results/db_post_50.csv" "../results/$filename/"
+		mv "../results/req_post_150.csv" "../results/$filename/"
+		mv "../results/db_post_150.csv" "../results/$filename/"
+		mv "../results/req_put_50.csv" "../results/$filename/"
+		mv "../results/db_put_50.csv" "../results/$filename/"
+		mv "../results/req_put_150.csv" "../results/$filename/"
+		mv "../results/db_put_150.csv" "../results/$filename/"
 		echo "Saving DONE"
 	done
 
