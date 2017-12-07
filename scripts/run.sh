@@ -3,7 +3,7 @@ sleep 1s
 
 echo "1GB exec"
 sleep 1s
-for i in {1..11}
+for i in {1..4}
 	do
 		echo "LOOP $i"
 		filename="$i"		
@@ -49,7 +49,7 @@ for i in {1..11}
 
 echo "500MB exec"
 sleep 1s
-for i in {11..21}
+for i in {4..7}
 	do
 		echo "LOOP $I"		
 		
@@ -93,7 +93,7 @@ echo "Done 500MB exec."
 
 echo "250MB exec"
 sleep 1s
-for i in {21..31}
+for i in {7..10}
 	do
 		echo "LOOP $I"		
 		
